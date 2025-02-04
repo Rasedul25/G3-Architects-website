@@ -8,6 +8,16 @@
 }
 
 /* share style */
+
+#main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    /* margin-top: 130px; */
+}
+
 .display-flex {
     display: flex;
 }
@@ -72,27 +82,149 @@
 
 /* banner style */
 
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
-    margin-bottom:20px ;
+
+}
+
+/* team and feature style */
+.teams {
+    align-items: center;
+    
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-feature {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+
+}
+
+.text-primary {
+    color: #FF900E;
+}
+
+/* Feature style */
+
+.feature{
+    gap: 140px;
+}
+
+#feature-title{
+    border-left: solid 5px #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6);
+}
+
+#experiance-badge{
+    width: 342px;
+    height: 200px;
+padding: 45px 42px;
+font-size: 1.5rem;
+font-weight: 500;
+margin-top: -200px;
+margin-left: -90px;
+}
+
+.years{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/* Some Facts style*/
+
+.facts{
+    margin-top: 130px;
+
+}
+.card-box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.card-box{
+    width: 140px;
+    height: 140px;
+    border: solid 1px rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.card-box-number{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-box-title{
+    margin-top: 5px;
+
+    font-weight: 600;
+}
+
+
+/* sponspor related style */
+.img-container{
+    gap: 155px;
+    filter: grayscale(100%);
+}
+
+.sponspor-container{
+    max-width: 540px;
+    text-align: center;
+    margin: 50px auto;
 }
 
 /* responsive media query */
 
-@media  and (max-width: 576px) {
-    .navbar, .nav-links{
-    flex-direction: colum;
+@media and (max-width: 576px) {
+
+    .navbar,
+    .nav-links,
+    .teams {
+        flex-direction: colum;
+    }
+    .team-img-container,
+    .sponspor-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-feature{
+        margin-left: 20px;
+    }
+
+    .card-box-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
